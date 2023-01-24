@@ -74,10 +74,10 @@ a{
 }
 
 .logo-small{
-    width: 35px;
+    width: 28px;
 }
 
-.input-group > *{
+.input-group .search-bar{
     background-color: rgba(229,229,229,255) !important;
     border: 0 !important;
 }
@@ -124,7 +124,13 @@ a{
     overflow: auto;
 }
 
+.blue-pill{
+    background-color: rgba(22,91,186,255) !important;
+}
 
+.student-section{
+    background-color: rgba(27,114,232,255);
+}
 
 
 /* ASIDE */
