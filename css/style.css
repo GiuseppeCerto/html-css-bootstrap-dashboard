@@ -1,0 +1,135 @@
+/* DEBUG */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.img{
+    max-width: 100%;
+}
+
+ul,
+li,
+a{
+    text-decoration: none;
+    list-style-type: none;
+    color: currentColor;
+}
+
+
+
+/* MEDIA QUERY */
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+
+}
+
+/* MAX CONTAINER */
+
+.max-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+.header-container{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-fluid{
+    background-color: white !important;
+    padding: 3px 12px !important;
+}
+
+.logo-small{
+    width: 35px;
+}
+
+.input-group > *{
+    background-color: rgba(229,229,229,255) !important;
+    border: 0 !important;
+}
+
+#basic-addon1{
+    padding: 6px 0px 6px 6px !important;
+}
+
+.form-control{
+    padding: 6px 12px 6px 6px !important;
+}
+
+.nav-item .link-header{
+    padding: 6px 10px !important;
+    color: rgba(91,88,88,255) !important;
+}
+
+.nav-item .link-header:hover{
+    color: rgba(27,114,232,255) !important;
+}
+
+.nav-item .yellow{
+    color: rgba(255,143,0,255) !important;
+    padding-right: 0 !important;
+}
+
+.dropdown-menu.show {
+    position: absolute;
+    top: 80%;
+    left: -120px;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* MAIN CONTENT */
+
+.main-container{
+    flex-grow: 1;
+    background-color: rgba(20,25,34,255);
+    display: flex;
+    overflow: auto;
+}
+
+
+/* ASIDE */
+
+.aside-container{
+    min-width: 150px;
+    background-color: blue;
+}
+
