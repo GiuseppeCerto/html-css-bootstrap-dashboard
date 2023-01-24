@@ -14,6 +14,9 @@
     
     <div class="max-container">
 
+        <!------- HEADER ------->
+
+
         <header class="header-container">
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid d-flex flex-nowrap ">
@@ -21,8 +24,8 @@
                         <img class="d-none d-md-block" src="./img/logo.svg" alt="Logo Boolean">
                         <img class="d-block d-md-none logo-small" src="./img/mobile-logo.png" alt="Logo small Boolean">
                     </a>
-                    <div class="input-group">
-                        <span class="input-group-text search-bar" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <div class="input-group d-flex search-bar-container">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control search-bar" placeholder="Prova a cercare: Lezioni su Lavarel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <ul class="nav d-flex flex-nowrap">
@@ -54,49 +57,162 @@
             </nav>
         </header>
 
+
         <main class="main-container">
 
-            <aside class="aside-container">
 
-            </aside>
+            <!------- SIDEBAR ------->
 
-            <div class="student-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="d-flex gap-2 align-items-center ">
-                                <h3>Boolean</h3>
-                                <span class="badge rounded-pill text-bg-primary blue-pill">Piano Blaze</span>
-                            </div>
 
-                            <div class="d-flex">
-                                <span class="badge rounded-pill text-bg-primary blue-pill">3 app</span>
-                                <i class="fa-solid fa-angles-right"></i>
-                                <span class="badge rounded-pill text-bg-primary blue-pill">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary blue-pill">Boolean web app</span>
-                                <span class="badge rounded-pill text-bg-primary blue-pill">Boolean blog app</span>
-                            </div>
-                                
+            <aside class="sidebar-container d-flex flex-column justify-content-between pb-3 ps-3 pe-3 text-white">
 
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div>
-                                Studenti online negli ultimi 30 minuti
-                            </div>
-                            <div class="fs-3">125</div>
-                        </div>
-                        <div class="col-md-2 col-sm-12">
-
-                        </div>
+                <div>
+                    <div class="d-flex align-items-center gap-3 mt-3 side-link">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="d-none d-md-block">Home</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mt-3 side-link">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <div class="d-none d-md-block">Stats</div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mt-3 side-link">
+                        <i class="fa-solid fa-signal"></i>
+                        <div class="d-none d-md-block">Signial</div>
                     </div>
                 </div>
 
+                <div class="d-flex align-items-center gap-3 side-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <div class="d-none d-md-block">Admin</div>
+                </div>
+
+            </aside>
+            
+
+            <!------- MAIN ------->
+
+
+            <div class="content-container">
+                
+                <div class="student-section">
+                    <div class="container text-white">
+                        <div class="row flex-wrap row-gap-4">
+
+                            <div class="bedge-apps col-xl-6 col-lg-6 col-md-4 col-sm-12">
+                                <div class="d-flex gap-2 align-items-center ">
+                                    <h3>Boolean</h3>
+                                    <span class="badge rounded-pill text-bg-primary blue-items">Piano Blaze</span>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center gap-2">
+                                    <span class="badge rounded-pill text-bg-primary blue-items">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <i class="plus-icon blue-items fa-solid fa-plus d-block d-md-none"></i>
+                                    <span class="badge rounded-pill text-bg-primary blue-pill d-none d-md-block ms-bedges blue-items">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-primary blue-pill d-none d-md-block ms-bedges blue-items">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-primary blue-pill d-none d-md-block ms-bedges blue-items">Boolean blog app</span>
+                                </div>
+                            </div>
+
+                            <div class="student-conter col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                                <div>
+                                    Studenti online negli ultimi 30 minuti
+                                </div>
+                                <div class="fs-3">125</div>
+                            </div>
+
+                            <div class="new-student col-xl-3 col-lg-3 col-md-4 col-sm-12 d-flex align-items-baseline gap-2">
+
+                                <div>
+                                    Nuovo studente
+                                </div>
+
+                                <div class="student-plus-button">
+                                    <a class="btn btn-link text-white border border-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                      
+                                    <div class="offcanvas offcanvas-start ms-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="container">
+                                                <div class="row row-gap-3">
+                                                    <div class="col-6">
+                                                        <label for="validationDefault01" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" id="validationDefault01" value="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="validationDefault02" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="validationDefaultUsername" class="form-label">Email</label>
+                                                        <div class="input-group">
+                                                          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="validationDefault02" class="form-label">Password</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="validationDefaultUsername" class="form-label">Indirizzo Email</label>
+                                                        <div class="input-group">
+                                                          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                                          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="validationDefault02" class="form-label">Password</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="validationDefault02" class="form-label">Indirizzo</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <label for="validationDefault02" class="form-label">Citt&agrave;</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label for="validationDefault04" class="form-label">Stato</label>
+                                                        <select class="form-select" id="validationDefault04" required>
+                                                          <option selected disabled value="">Scegli...</option>
+                                                          <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <label for="validationDefault02" class="form-label">CAP</label>
+                                                        <input type="text" class="form-control" id="validationDefault02" value="" required>
+                                                    </div>
+                                                    <div class="col-12 d-flex flex-column row-gap-2">
+                                                        <div>Foto</div>
+                                                        <input type="file" class="form-control" aria-label="file example" required>
+                                                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                                                    </div>
+                                                    <dov class="col-4 mt-3">
+                                                        <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                                                        <label class="form-check-label" for="validationFormCheck1">Seleziona per proseguire</label>
+                                                        <div class="invalid-feedback">Example invalid feedback text</div>
+                                                    </dov>
+                                                </div>
+                                                <button type="button" class="btn btn-primary text-nowrap mt-4">Salva</button>
+                                                <button type="button" class="btn btn-warning text-nowrap mt-4">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-
         </main>
-
 
     </div>
 

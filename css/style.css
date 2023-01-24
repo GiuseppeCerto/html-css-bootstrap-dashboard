@@ -27,11 +27,30 @@ a{
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
 
+    .new-student{
+        order: 1;
+    }
+
+    .bedge-apps{
+        order: 2;
+    }
+
+    .student-conter{
+        order: 3;
+    }
+
+    .sidebar-container{
+        width: 68px !important;
+        align-items: center;
+        padding-left: 0 !important;
+        flex-shrink: 0;
+    }
 
 }
 
@@ -48,10 +67,9 @@ a{
 /* MAX CONTAINER */
 
 .max-container{
-    height: 100vh;
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 
@@ -61,7 +79,7 @@ a{
     height: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .navbar{
@@ -77,9 +95,13 @@ a{
     width: 28px;
 }
 
-.input-group .search-bar{
+.search-bar-container > *{
     background-color: rgba(229,229,229,255) !important;
     border: 0 !important;
+}
+
+.search-bar{
+    flex-grow: 1;
 }
 
 #basic-addon1{
@@ -114,29 +136,66 @@ a{
     display: none;
 }
 
-
-/* CONTENT */
+/* MAIN */
 
 .main-container{
     flex-grow: 1;
-    background-color: rgba(248,249,250,255);
     display: flex;
-    overflow: auto;
 }
 
-.blue-pill{
-    background-color: rgba(22,91,186,255) !important;
+
+/* CONTENT CONTAINER */
+
+
+.content-container{
+    flex-grow: 1;
 }
 
 .student-section{
     background-color: rgba(27,114,232,255);
+    padding: 30px 0;
 }
 
+.plus-icon{
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: 5px;
 
-/* ASIDE */
-
-.aside-container{
-    min-width: 150px;
-    background-color: rgba(18,41,62,255);
+    line-height: 13px;
 }
 
+.blue-items{
+    background-color: rgba(22,91,186,255) !important;
+}
+
+/************* DA CONTROLLARE **************/
+
+.offcanvas.offcanvas-start {
+    top: 0;
+    left: 100%;
+    width: 800px;
+    border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(-100%);
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: translatex(-100%);
+}
+
+/*******************************/
+
+/* SIDEBAR */
+
+
+.sidebar-container{
+    width: fit-content;
+    height: 100%;
+}
+
+.side-link{
+    padding: 4px 5px;
+}
+
+.side-link:hover{
+    background-color: gray;
+}
