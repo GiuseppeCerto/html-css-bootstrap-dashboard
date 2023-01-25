@@ -200,6 +200,11 @@ a{
     cursor: pointer;
 }
 
+.table-cell:hover{
+    background-color: cyan !important;
+    cursor: pointer;
+}
+
 .ms-card{
     border: 0 !important;
 }
