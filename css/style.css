@@ -47,8 +47,9 @@ a{
 
     .sidebar-container{
         width: 68px !important;
-        align-items: center;
-        padding-left: 0 !important;
+        align-items: center !important; 
+        padding-right: 0px !important;
+        padding-left: 0px !important;
         flex-shrink: 0;
     }
 
@@ -184,12 +185,23 @@ a{
 
 /*******************************/
 
+.bg-header-card{
+    background-color: rgba(247,247,247,255) !important;
+}
+
+.ms-border{
+}
+
 /* SIDEBAR */
 
 
 .sidebar-container{
     width: fit-content;
     height: 100%;
+    background-image:url("sidebar-bg.png");
+    background-color: #808;
+    background-size: cover;
+    background-position: bottom center, 50%, 50%;
 }
 
 .side-link{
